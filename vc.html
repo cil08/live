@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Klik Auto Play</title>
+  <style>
+    body{
+      text-align:center;
+      font-family:Arial;
+    }
+    #myVideo{
+      width:980px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<div class="box">
+
+<span class="icon view">
+<i class="fa-solid fa-eye"></i> Live.
+</span>
+
+
+
+<span class="icon like">
+<i class="fa-solid fa-heart"></i> 1,5rb menonton..
+</span>
+
+</div>
+
+<body>
+
+<h2>Klik untuk putar live</h2>
+
+<video id="myVideo">
+  <source src="mulus.mp4" type="video/mp4">
+  Browser tidak mendukung video.
+</video>
+
+<script>
+  var video = document.getElementById("myVideo");
+
+  video.addEventListener("click", function(){
+    video.play();
+  });
+</script>
+
+</body>
+</html>
